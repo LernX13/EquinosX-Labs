@@ -1,0 +1,24 @@
+[
+  {
+    "platform": "Windows",
+    "name": "ChamberOS para PC",
+    "version": "Próximamente",
+    "description": "Añade aquí la versión de escritorio cuando esté lista para publicarse.",
+    "fileType": "EXE",
+    "buttonLabel": "Próximamente",
+    "href": "",
+    "published": false,
+    "visible": true
+  },
+  {
+    "platform": "Android",
+    "name": "ChamberOS móvil",
+    "version": "Próximamente",
+    "description": "Añade aquí el instalador de Android cuando esté listo para publicarse.",
+    "fileType": "APK",
+    "buttonLabel": "Próximamente",
+    "href": "",
+    "published": false,
+    "visible": true
+  }
+]

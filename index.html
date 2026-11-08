@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b13">
+    <meta name="description" content="Descargas oficiales de EquinosX Labs para Windows y Android.">
+    <title>EquinosX Labs — Descargas oficiales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-theme="aurora" data-button-style="solid">
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header wrap">
+      <a class="brand" href="#inicio" aria-label="EquinosX Labs, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 35.5 12.4v15.2L20 36.5 4.5 27.6V12.4L20 3.5Z" stroke="currentColor" stroke-width="1.5"/><path d="m12.5 25 7.5-13 7.5 13M15.4 20h9.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-name">EquinosX <span>Labs</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#descargas">Descargas</a>
+        <a href="#personaliza">Personaliza</a>
+        <a href="#publicar">Publicar</a>
+      </nav>
+      <a class="header-cta" href="#descargas"><span class="status-dot"></span> Explorar versiones</a>
+    </header>
+
+    <main class="wrap" id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> SOFTWARE · ACTUALIZACIONES · IDEAS</div>
+          <h1 id="hero-title">Hecho para<br><span>ir más allá.</span></h1>
+          <p class="hero-lede">Un espacio cuidado para encontrar las aplicaciones de EquinosX Labs. Descargas claras, versiones a la vista y sin rodeos.</p>
+          <div class="hero-actions">
+            <a class="button primary-button" href="#descargas">Ver descargas <span aria-hidden="true">↘</span></a>
+            <span class="hero-caption"><span class="pulse-dot"></span> Actualizaciones oficiales</span>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>Windows</strong><span>Aplicaciones de escritorio</span></div>
+            <div class="proof-divider"></div>
+            <div class="proof-item"><strong>Android</strong><span>Instaladores para móvil</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Vista previa del catálogo de aplicaciones">
+          <div class="orb orb-back"></div>
+          <div class="orb orb-front"></div>
+          <div class="preview-card glass-panel">
+            <div class="preview-topline">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>CATÁLOGO DE VERSIONES</span>
+              <span class="preview-menu">···</span>
+            </div>
+            <div class="preview-inner">
+              <div class="preview-label">EQUINOSX / RELEASES</div>
+              <div class="preview-product">
+                <div class="app-icon">EX<span>✳</span></div>
+                <div><strong>Tus próximas apps</strong><small>Windows &nbsp;·&nbsp; Android</small></div>
+                <span class="preview-chevron">↗</span>
+              </div>
+              <div class="preview-rule"></div>
+              <div class="preview-release-row"><span>Distribución segura</span><span class="release-check">✓ Verificada</span></div>
+              <div class="preview-meter"><span></span></div>
+              <div class="preview-footer"><span>El siguiente lanzamiento empieza aquí.</span><span>01 / 02</span></div>
+            </div>
+          </div>
+          <div class="float-chip chip-top"><span class="chip-spark">✦</span> Diseño a tu manera</div>
+          <div class="float-chip chip-bottom"><span class="chip-ring">↗</span> Un solo lugar para actualizar</div>
+          <div class="art-index">EXL <span>—</span> 2026</div>
+        </div>
+      </section>
+
+      <section class="downloads-section" id="descargas" aria-labelledby="downloads-title">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> CENTRO DE DESCARGAS</div>
+            <h2 id="downloads-title">Encuentra tu <span>versión.</span></h2>
+            <p class="section-copy">Cada instalador, con su información y enlace directo.</p>
+          </div>
+          <div class="catalog-status"><span class="status-dot"></span><span id="release-count">Cargando catálogo…</span></div>
+        </div>
+        <div class="download-grid" id="download-grid" aria-live="polite">
+          <article class="download-card loading-card"><span class="loading-shimmer"></span><span class="loading-shimmer short"></span></article>
+          <article class="download-card loading-card"><span class="loading-shimmer"></span><span class="loading-shimmer short"></span></article>
+        </div>
+        <p class="catalog-note"><span class="note-icon">i</span> Descarga únicamente instaladores publicados por EquinosX Labs.</p>
+      </section>
+
+      <section class="customize-section" id="personaliza" aria-labelledby="customize-title">
+        <div class="customize-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> TU ESPACIO</div>
+          <h2 id="customize-title">Cambia el ambiente.</h2>
+          <p>Elige una paleta y un estilo de botón. Tu selección se guardará en este dispositivo.</p>
+        </div>
+        <div class="customize-controls">
+          <fieldset class="control-group">
+            <legend>Temas</legend>
+            <div class="theme-options">
+              <button class="theme-option" type="button" data-theme-choice="aurora" aria-pressed="true"><span class="swatch swatch-aurora"></span><span>Aurora</span></button>
+              <button class="theme-option" type="button" data-theme-choice="mono" aria-pressed="false"><span class="swatch swatch-mono"></span><span>Blanco y negro</span></button>
+              <button class="theme-option" type="button" data-theme-choice="glacier" aria-pressed="false"><span class="swatch swatch-glacier"></span><span>Glaciar</span></button>
+              <button class="theme-option" type="button" data-theme-choice="ember" aria-pressed="false"><span class="swatch swatch-ember"></span><span>Órbita</span></button>
+            </div>
+          </fieldset>
+          <fieldset class="control-group button-group">
+            <legend>Botones</legend>
+            <div class="button-options">
+              <button class="style-option" type="button" data-button-choice="solid" aria-pressed="true">Sólido</button>
+              <button class="style-option" type="button" data-button-choice="glass" aria-pressed="false">Cristal</button>
+              <button class="style-option" type="button" data-button-choice="outline" aria-pressed="false">Contorno</button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="publish-section" id="publicar" aria-labelledby="publish-title">
+        <div class="publish-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 5v24m0-24L14 15m10-10 10 10M8 27v11a5 5 0 0 0 5 5h22a5 5 0 0 0 5-5V27" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="publish-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> LISTO PARA CRECER</div>
+          <h2 id="publish-title">Un lanzamiento, <span>dos pasos.</span></h2>
+          <p>Publica el instalador en GitHub Releases y añade su enlace a <code>downloads.json</code>. El catálogo mostrará el nombre, la versión y el botón que configures.</p>
+        </div>
+        <a class="text-link" href="README.md">Ver guía de publicación <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 35.5 12.4v15.2L20 36.5 4.5 27.6V12.4L20 3.5Z" stroke="currentColor" stroke-width="1.5"/><path d="m12.5 25 7.5-13 7.5 13M15.4 20h9.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-name">EquinosX <span>Labs</span></span></a>
+      <span class="footer-center">Software con intención. Actualizaciones con claridad.</span>
+      <a class="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
