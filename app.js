@@ -8,6 +8,7 @@ const LOCAL_PREVIEW_ITEMS = [
 ];
 const grid = document.querySelector('#download-grid');
 const count = document.querySelector('#release-count');
+const catalogStatus = document.querySelector('.catalog-status');
 
 function readSetting(key, allowed, fallback) {
   try {
@@ -87,6 +88,7 @@ async function loadCatalog() {
     if (!Array.isArray(items)) throw new Error('El formato del catálogo no es válido.');
     const visibleItems = items.filter((item) => item && item.visible !== false);
     const publishedCount = visibleItems.filter((item) => item.published === true && safeDownloadUrl(item.href)).length;
+    catalogStatus?.classList.toggle('is-empty', publishedCount === 0);
     count.textContent = publishedCount === 1 ? '1 versión disponible' : `${publishedCount} versiones disponibles`;
     grid.innerHTML = visibleItems.length
       ? visibleItems.map(makeCard).join('')
@@ -95,9 +97,11 @@ async function loadCatalog() {
     if (window.location.protocol === 'file:') {
       count.textContent = 'Vista previa local';
       grid.innerHTML = LOCAL_PREVIEW_ITEMS.map(makeCard).join('');
+      catalogStatus?.classList.add('is-empty');
       return;
     }
     count.textContent = 'Catálogo no disponible';
+    catalogStatus?.classList.add('is-empty');
     grid.innerHTML = `<div class="empty-message"><span class="empty-symbol" aria-hidden="true">↻</span><div><strong>No pudimos cargar las descargas.</strong><p>Inténtalo de nuevo más tarde.</p></div></div>`;
   }
 }
@@ -107,6 +111,9 @@ document.querySelectorAll('[data-theme-choice]').forEach((button) => {
 });
 document.querySelectorAll('[data-button-choice]').forEach((button) => {
   button.addEventListener('click', () => applyButtonStyle(button.dataset.buttonChoice));
+});
+document.querySelectorAll('.mobile-menu-panel a').forEach((link) => {
+  link.addEventListener('click', () => link.closest('.mobile-menu')?.removeAttribute('open'));
 });
 
 applyTheme(readSetting(THEME_KEY, ['aurora', 'mono', 'glacier', 'ember'], DEFAULT_THEME));
