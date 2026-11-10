@@ -2,12 +2,12 @@
   {
     "platform": "Windows",
     "name": "ChamberOS para PC",
-    "version": "1.6.0",
-    "description": "Gestiona ventas, productos e inventario desde tu computadora. Incluye comprobación de actualizaciones.",
+    "version": "Próximamente",
+    "description": "Añade aquí la versión de escritorio cuando esté lista para publicarse.",
     "fileType": "EXE",
-    "buttonLabel": "Descargar para Windows",
-    "href": "https://github.com/LernX13/EquinosX-Labs/releases/download/v1.6.0/ChamberOS.exe",
-    "published": true,
+    "buttonLabel": "Próximamente",
+    "href": "",
+    "published": false,
     "visible": true
   },
   {
