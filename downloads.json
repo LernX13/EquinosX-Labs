@@ -2,12 +2,12 @@
   {
     "platform": "Windows",
     "name": "ChamberOS para PC",
-    "version": "Próximamente",
-    "description": "Añade aquí la versión de escritorio cuando esté lista para publicarse.",
+    "version": "1.7.0 · Prueba",
+    "description": "Instalador de prueba de la versión 1.7.0 con la configuración corregida.",
     "fileType": "EXE",
-    "buttonLabel": "Próximamente",
-    "href": "",
-    "published": false,
+    "buttonLabel": "Descargar instalador de prueba",
+    "href": "https://github.com/LernX13/EquinosX-Labs/releases/download/v1.7.0-test.1/ChamberOS_1.7.0_Instalador_Prueba.exe",
+    "published": true,
     "visible": true
   },
   {
